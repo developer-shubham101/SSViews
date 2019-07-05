@@ -1,5 +1,5 @@
 import XCTest
-import SSViews
+//import SSViews
 
 class Tests: XCTestCase {
     

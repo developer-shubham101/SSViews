@@ -7,12 +7,17 @@
 //
 
 import UIKit
-
+import SSViews
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dropDown: SSDropDown!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        dropDown.data = ["First", "Second", "Third"]
+        dropDown.reloadData()
+        dropDown.showDoneButton = true
+         dropDown.hideOnChange = false
     }
 
     override func didReceiveMemoryWarning() {
