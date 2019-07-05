@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SSViews_Example' do
+  pod 'SSViews', :path => '../'
+
+  target 'SSViews_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
