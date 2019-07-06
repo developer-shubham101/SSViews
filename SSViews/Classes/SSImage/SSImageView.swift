@@ -9,7 +9,7 @@ import UIKit
 
 
 @IBDesignable
-class SSImageView: UIImageView {
+open class SSImageView: UIImageView {
     
     @IBInspectable var radius:Bool = false {
         didSet{

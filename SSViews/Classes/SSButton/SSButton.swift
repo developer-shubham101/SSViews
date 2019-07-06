@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class SSButton: UIButton {
+open class SSButton: UIButton {
     
     @IBInspectable var useShadow:Bool = false{
         didSet{
