@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		19A95294B99E733B506E0D1031773A05 /* Pods-SSViews_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8132FF0EC69C50F8EFF66C1AE8B5BF14 /* Pods-SSViews_Tests-dummy.m */; };
 		4C98CCB562C9E974C9079DD214A0B482 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		567BC3B7BA097E88E200BEF8A1D0483D /* SSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E1BB5AF96DD4D986B2EE545E360AC /* SSDropDown.swift */; };
 		63E1BB36B16BB669E3DBD253A098FCC6 /* Pods-SSViews_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2144CE7D105036B2522B0526212B3EB /* Pods-SSViews_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80699071AE21AAF76A8C72B4A132EF90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 		8302788AE9B18D7B2AA86953B5FDCB69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		9FA4A4A522CF786700C8830C /* SSDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4A4A422CF786700C8830C /* SSDatePicker.swift */; };
-		9FA4A4A922CF88B400C8830C /* SSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4A4A822CF88B400C8830C /* SSImageView.swift */; };
-		9FA4A4AD22CF8A2300C8830C /* SSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4A4AC22CF8A2300C8830C /* SSButton.swift */; };
+		9FEB21DF22D06357004F3AB2 /* SSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB21D822D06357004F3AB2 /* SSButton.swift */; };
+		9FEB21E022D06357004F3AB2 /* SSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB21DA22D06357004F3AB2 /* SSImageView.swift */; };
+		9FEB21E122D06357004F3AB2 /* SSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB21DC22D06357004F3AB2 /* SSDropDown.swift */; };
+		9FEB21E222D06357004F3AB2 /* SSDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB21DE22D06357004F3AB2 /* SSDatePicker.swift */; };
 		ADE65FD42C81C21903F414986FF7162C /* SSViews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D94E8CCFD1D1567AC503843225F73E5 /* SSViews-dummy.m */; };
 		B428BE1DC2F89258DA815D2F0C94EF90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 		D445FBF298031FE4B4FF8BC5F42C7A24 /* Pods-SSViews_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8586B95A0859EF486C922EE7DED9E572 /* Pods-SSViews_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,13 +62,13 @@
 		99B93987EC11E01D0A137C83B803716D /* Pods-SSViews_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSViews_Tests-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE00FF12BFE44296899F678FF76DF85 /* Pods-SSViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9FA4A4A422CF786700C8830C /* SSDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSDatePicker.swift; path = SSViews/Classes/SSDatePicker.swift; sourceTree = "<group>"; };
-		9FA4A4A822CF88B400C8830C /* SSImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSImageView.swift; path = ../SSViews/Classes/SSImage/SSImageView.swift; sourceTree = "<group>"; };
-		9FA4A4AC22CF8A2300C8830C /* SSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SSButton.swift; path = SSViews/Classes/SSButton/SSButton.swift; sourceTree = "<group>"; };
 		9FC4201FB87A6E9B81057BF1BA593947 /* SSViews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSViews-umbrella.h"; sourceTree = "<group>"; };
+		9FEB21D822D06357004F3AB2 /* SSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSButton.swift; sourceTree = "<group>"; };
+		9FEB21DA22D06357004F3AB2 /* SSImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSImageView.swift; sourceTree = "<group>"; };
+		9FEB21DC22D06357004F3AB2 /* SSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDropDown.swift; sourceTree = "<group>"; };
+		9FEB21DE22D06357004F3AB2 /* SSDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDatePicker.swift; sourceTree = "<group>"; };
 		A05C9C2ED539D4E3867E0AFA33B9456E /* Pods-SSViews_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSViews_Example-Info.plist"; sourceTree = "<group>"; };
 		B2144CE7D105036B2522B0526212B3EB /* Pods-SSViews_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSViews_Example-umbrella.h"; sourceTree = "<group>"; };
-		B31E1BB5AF96DD4D986B2EE545E360AC /* SSDropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SSDropDown.swift; sourceTree = "<group>"; };
 		BBD11EDCDC4695821FBDD7F4E0E8F62E /* Pods-SSViews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSViews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C11851F9440160FB457F7656D822EFAA /* Pods-SSViews_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSViews_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C8EA29575A5ACE65F35EAE46407BBCCB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -182,35 +182,40 @@
 			path = "Target Support Files/Pods-SSViews_Example";
 			sourceTree = "<group>";
 		};
-		9FA4A4A322CF784300C8830C /* SSDatePicker */ = {
+		9FEB21D722D06357004F3AB2 /* SSButton */ = {
 			isa = PBXGroup;
 			children = (
-				9FA4A4A422CF786700C8830C /* SSDatePicker.swift */,
+				9FEB21D822D06357004F3AB2 /* SSButton.swift */,
 			);
-			name = SSDatePicker;
+			name = SSButton;
+			path = SSViews/Classes/SSButton;
 			sourceTree = "<group>";
 		};
-		9FA4A4A622CF786E00C8830C /* SSDropDown */ = {
+		9FEB21D922D06357004F3AB2 /* SSImage */ = {
 			isa = PBXGroup;
 			children = (
-				B31E1BB5AF96DD4D986B2EE545E360AC /* SSDropDown.swift */,
+				9FEB21DA22D06357004F3AB2 /* SSImageView.swift */,
+			);
+			name = SSImage;
+			path = SSViews/Classes/SSImage;
+			sourceTree = "<group>";
+		};
+		9FEB21DB22D06357004F3AB2 /* SSDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB21DC22D06357004F3AB2 /* SSDropDown.swift */,
 			);
 			name = SSDropDown;
+			path = SSViews/Classes/SSDropDown;
 			sourceTree = "<group>";
 		};
-		9FA4A4A722CF887A00C8830C /* SSImage */ = {
+		9FEB21DD22D06357004F3AB2 /* SSDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				9FA4A4A822CF88B400C8830C /* SSImageView.swift */,
+				9FEB21DE22D06357004F3AB2 /* SSDatePicker.swift */,
 			);
-			path = SSImage;
-			sourceTree = "<group>";
-		};
-		9FA4A4AB22CF89F000C8830C /* SSButton */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SSButton;
+			name = SSDatePicker;
+			path = SSViews/Classes/SSDatePicker;
 			sourceTree = "<group>";
 		};
 		C715D78E22D9703FF7EFB970E1CEC028 /* Development Pods */ = {
@@ -254,11 +259,10 @@
 		EA8796E060BC37176FF37A289A22B874 /* SSViews */ = {
 			isa = PBXGroup;
 			children = (
-				9FA4A4AC22CF8A2300C8830C /* SSButton.swift */,
-				9FA4A4AB22CF89F000C8830C /* SSButton */,
-				9FA4A4A722CF887A00C8830C /* SSImage */,
-				9FA4A4A622CF786E00C8830C /* SSDropDown */,
-				9FA4A4A322CF784300C8830C /* SSDatePicker */,
+				9FEB21D722D06357004F3AB2 /* SSButton */,
+				9FEB21DD22D06357004F3AB2 /* SSDatePicker */,
+				9FEB21DB22D06357004F3AB2 /* SSDropDown */,
+				9FEB21D922D06357004F3AB2 /* SSImage */,
 				6B909189C62BD3F56DB949C3DC4C2876 /* Pod */,
 				5AEBB8AB605E004E63F12B94864BCDFD /* Support Files */,
 			);
@@ -418,11 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA4A4A922CF88B400C8830C /* SSImageView.swift in Sources */,
-				9FA4A4AD22CF8A2300C8830C /* SSButton.swift in Sources */,
-				567BC3B7BA097E88E200BEF8A1D0483D /* SSDropDown.swift in Sources */,
+				9FEB21E022D06357004F3AB2 /* SSImageView.swift in Sources */,
 				ADE65FD42C81C21903F414986FF7162C /* SSViews-dummy.m in Sources */,
-				9FA4A4A522CF786700C8830C /* SSDatePicker.swift in Sources */,
+				9FEB21E122D06357004F3AB2 /* SSDropDown.swift in Sources */,
+				9FEB21E222D06357004F3AB2 /* SSDatePicker.swift in Sources */,
+				9FEB21DF22D06357004F3AB2 /* SSButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
