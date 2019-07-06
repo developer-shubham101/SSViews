@@ -21,22 +21,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibv-nV-RfX" customClass="SSDropDown" customModule="SSViews">
-                                <rect key="frame" x="109" y="90" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SSDatePicker" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lCB-mZ-5yr" customClass="SSDatePicker" customModule="SSViews">
+                                <rect key="frame" x="26" y="100" width="323" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="PK1-jo-QeJ" customClass="SSImageView" customModule="SSViews">
+                                <rect key="frame" x="137.5" y="150" width="100" height="100.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Oqo-jh-V5t"/>
+                                    <constraint firstAttribute="height" constant="100" id="iwy-L2-x3i"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="radius" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radiusAmt">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWi-5z-Ssz" customClass="SSButton" customModule="SSViews">
+                                <rect key="frame" x="167.5" y="270" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.41960784309999999" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="27l-sI-Bey"/>
+                                    <constraint firstAttribute="height" constant="40" id="C1S-Q9-486"/>
+                                </constraints>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" white="0.90197809650000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="radius" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radiusAmt">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ShadowX">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ShadowY">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SSDropDown" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibv-nV-RfX" customClass="SSDropDown" customModule="SSViews">
+                                <rect key="frame" x="26" y="50" width="323" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ibv-nV-RfX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="2MN-4j-jiH"/>
+                            <constraint firstItem="lCB-mZ-5yr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="6Rn-GD-YhL"/>
+                            <constraint firstItem="lCB-mZ-5yr" firstAttribute="top" secondItem="ibv-nV-RfX" secondAttribute="bottom" constant="20" id="BxZ-KF-lUf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lCB-mZ-5yr" secondAttribute="trailing" constant="10" id="F3W-Tw-HB2"/>
+                            <constraint firstItem="rWi-5z-Ssz" firstAttribute="top" secondItem="PK1-jo-QeJ" secondAttribute="bottom" constant="20" id="Lws-S5-9ka"/>
+                            <constraint firstItem="rWi-5z-Ssz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Mts-X5-ZjL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ibv-nV-RfX" secondAttribute="trailing" constant="10" id="ixx-SK-bBI"/>
+                            <constraint firstItem="PK1-jo-QeJ" firstAttribute="top" secondItem="lCB-mZ-5yr" secondAttribute="bottom" constant="20" id="lZ6-a1-4e2"/>
+                            <constraint firstItem="PK1-jo-QeJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ue2-uJ-5L0"/>
+                            <constraint firstItem="ibv-nV-RfX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="v7e-fr-SJE"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="lCB-mZ-5yr" id="NvK-fl-rB7"/>
                         <outlet property="dropDown" destination="ibv-nV-RfX" id="g2S-vN-Dyt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-15.199999999999999" y="127.28635682158921"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="download" width="257" height="196"/>
+    </resources>
 </document>

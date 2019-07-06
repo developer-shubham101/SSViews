@@ -35,11 +35,7 @@ public class SSDropDown: UITextField, UIPickerViewDelegate, UIPickerViewDataSour
             pickerViewInit()
         }
     }
-    public var hideOnChange:Bool = false {
-        didSet{
-            pickerViewInit()
-        }
-    }
+    public var hideOnChange:Bool = false  
     
     override public func awakeFromNib() {
         pickerViewInit()
@@ -53,7 +49,7 @@ public class SSDropDown: UITextField, UIPickerViewDelegate, UIPickerViewDataSour
     fileprivate func pickerViewInit( ){
         
         //Create a parent view for UIPickerView
-        let pickerViewWrpper = UIView(frame: CGRect(x:0, y: 200,width: 10,height: 220))
+        let pickerViewWrpper = UIView(frame: CGRect(x:0, y: 200, width: 320,height: 220))
         pickerViewWrpper.backgroundColor = .clear
         
         
