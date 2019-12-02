@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 Add picker in UITextField with just couple of codes.
                        DESC
 
-  s.homepage         = 'https://github.com/shubhamsharma95/SSViews'
+  s.homepage         = 'https://github.com/developer-shubham101/SSViews'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'shubhamsharma95' => 'shubham.sharma@arkasoftwares.com' }
-  s.source           = { :git => 'https://github.com/shubhamsharma95/SSViews.git', :tag => s.version.to_s }
+  s.author           = { 'developer-shubham101' => 'developer.shubham101@gmail.com' }
+  s.source           = { :git => 'https://github.com/developer-shubham101/SSViews.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version = '5.0'
   s.ios.deployment_target = '10.0'
