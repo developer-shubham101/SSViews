@@ -13,35 +13,30 @@ open class SSImageView: UIImageView {
     
     @IBInspectable var radius:Bool = false {
         didSet{
-            updateRadius()
+            updateView()
         }
     }
-    //    @IBInspectable var ShadowX:Int = 1 {
-    //        didSet{
-    //            updateRadius()
-    //        }
-    //    }
-    //    @IBInspectable var ShadowY:Int = 1 {
-    //        didSet{
-    //            updateRadius()
-    //        }
-    //    }
-    
-    
+	
     @IBInspectable var radiusAmt:CGFloat = 0 {
         didSet{
-            updateRadius()
+            updateView()
         }
     }
-    
-    
-    
-    
-    func updateRadius(){
+	
+	@IBInspectable var clipOuterView:Bool = true {
+		didSet{
+			updateView()
+		}
+	}
+	
+    func updateView(){
+		
+		//Apply mask
+		layer.masksToBounds = clipOuterView
         if(radius){
             self.layer.cornerRadius = radiusAmt;
             self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
-            self.layer.masksToBounds = true;
+			
         }
     }
     
