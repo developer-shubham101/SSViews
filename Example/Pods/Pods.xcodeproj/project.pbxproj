@@ -17,6 +17,7 @@
 		75591ADA4DE50F5E4991BEFE034E5CB0 /* SSDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F648A2E2BB29034E5B734C195F106B21 /* SSDatePicker.swift */; };
 		9284CFFA68D6F9E2CDC8FD0A66E93ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		9EF3CAE0F4096CF4559F57DF7905D809 /* SSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CAAB9CCA5A483BB502110FE12D993E /* SSImageView.swift */; };
+		9F08CFC923E7FF2E009FCA52 /* SSCustomRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08CFC823E7FF2D009FCA52 /* SSCustomRadio.swift */; };
 		9F478EA92394E70A005F219A /* SSShadowRadusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F478EA72394E6FD005F219A /* SSShadowRadusView.swift */; };
 		ABCFC3B079FF1D24D1BE649A81E46986 /* Pods-SSViews_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8586B95A0859EF486C922EE7DED9E572 /* Pods-SSViews_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6106CC9D18E501F4E419A4EA19C96C6 /* Pods-SSViews_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D285E37D7886740941C399187407910 /* Pods-SSViews_Example-dummy.m */; };
@@ -67,6 +68,7 @@
 		99B93987EC11E01D0A137C83B803716D /* Pods-SSViews_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSViews_Tests-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE00FF12BFE44296899F678FF76DF85 /* Pods-SSViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9F08CFC823E7FF2D009FCA52 /* SSCustomRadio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCustomRadio.swift; sourceTree = "<group>"; };
 		9F478EA72394E6FD005F219A /* SSShadowRadusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSShadowRadusView.swift; sourceTree = "<group>"; };
 		A04A3A09C4D44DC0C7C0FAB5B760CC72 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A05C9C2ED539D4E3867E0AFA33B9456E /* Pods-SSViews_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSViews_Example-Info.plist"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		28E2A72CAADCA2B5741328537D44D6F1 /* SSButton */ = {
 			isa = PBXGroup;
 			children = (
+				9F08CFC823E7FF2D009FCA52 /* SSCustomRadio.swift */,
 				74BE6AF007E3EEC9E68F3EB62C27DF1E /* SSButton.swift */,
 			);
 			name = SSButton;
@@ -455,6 +458,7 @@
 				9F478EA92394E70A005F219A /* SSShadowRadusView.swift in Sources */,
 				9EF3CAE0F4096CF4559F57DF7905D809 /* SSImageView.swift in Sources */,
 				C9C655E990FC2EDD0E66757AEEB1043D /* SSView.swift in Sources */,
+				9F08CFC923E7FF2E009FCA52 /* SSCustomRadio.swift in Sources */,
 				118F85B7719F7179AB158AC1AD77105E /* SSViews-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

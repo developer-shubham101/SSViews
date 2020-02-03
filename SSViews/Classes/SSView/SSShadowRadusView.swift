@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SSShadowRadusView: UIView {
+open class SSShadowRadusView: UIView {
 	
 	@IBInspectable open var viewBackgroundColor: UIColor = UIColor.white {
 		didSet{

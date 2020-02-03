@@ -13,7 +13,7 @@ public protocol SSDatePickerDelegate {
     func dateChange(_ ssDropDown:SSDatePicker, selectedDate: Date)
 }
 
-public class SSDatePicker: UITextField {
+open class SSDatePicker: UITextField {
     
     public var dateMode:UIDatePicker.Mode = .date
     public var datePickerDelegate:SSDatePickerDelegate?

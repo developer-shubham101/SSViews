@@ -61,7 +61,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	@IBAction func didTapSwitchRadio(_ sender: SSCustomRadio) {
+		sender.isOn = !sender.isOn
+	}
+	
 }
 //MARK:- Delegate of SSDropDown
 extension ViewController : SSDropDownDelegate {

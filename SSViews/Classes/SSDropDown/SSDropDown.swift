@@ -22,7 +22,7 @@ extension SSDropDownString: DropDownObject {
 public protocol SSDropDownDelegate {
     func optionChange(_ ssDropDown:SSDropDown, selectedItem: DropDownObject)
 }
-public class SSDropDown: UITextField, UIPickerViewDelegate, UIPickerViewDataSource {
+open class SSDropDown: UITextField, UIPickerViewDelegate, UIPickerViewDataSource {
     
     fileprivate let picker = UIPickerView( )
     
