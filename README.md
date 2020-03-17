@@ -14,7 +14,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 Drage and drop view and set Class type SSView
 
-![Set class](https://raw.githubusercontent.com/developer-shubham101/SSViews/master/screenshots/example-2.png?raw=true "Examples")
+![Set class](https://raw.githubusercontent.com/developer-shubham101/SSViews/master/screenshots/example-1.png?raw=true "Examples")
 
 Now you will see more option for view
 ![Change options](https://raw.githubusercontent.com/developer-shubham101/SSViews/master/screenshots/example-2.png?raw=true "Examples")
