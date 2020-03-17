@@ -9,11 +9,26 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+`import SSViews`
+
+
+Drage and drop view and set Class type SSView
+
+![Set class](https://raw.githubusercontent.com/developer-shubham101/SSViews/master/screenshots/example-2.png?raw=true "Examples")
+
+Now you will see more option for view
+![Change options](https://raw.githubusercontent.com/developer-shubham101/SSViews/master/screenshots/example-2.png?raw=true "Examples")
+
+
+same way you can use button (Use SSButton), image (Use SSImageView)
+
+
+for Picker (DropDown) and DatePicker [Check this example](https://github.com/developer-shubham101/SSViews/blob/master/Example/SSViews/ViewController.swift) or open example dir and run. 
 
 
 # Screenshots
 
-![Login](/screenshots/1.png?raw=true "Examples")
+![Login](https://raw.githubusercontent.com/developer-shubham101/SSViews/master/screenshots/1.png?raw=true "Examples")
 
 ## Requirements
 
