@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="PK1-jo-QeJ" customClass="SSImageView" customModule="SSViews">
-                                <rect key="frame" x="137.5" y="138" width="100" height="100.00000000000006"/>
+                                <rect key="frame" x="137.5" y="138" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Oqo-jh-V5t"/>
                                     <constraint firstAttribute="height" constant="100" id="iwy-L2-x3i"/>
@@ -152,6 +152,7 @@
                     <connections>
                         <outlet property="datePicker" destination="lCB-mZ-5yr" id="NvK-fl-rB7"/>
                         <outlet property="dropDown" destination="ibv-nV-RfX" id="g2S-vN-Dyt"/>
+                        <outlet property="sampleView" destination="77c-iX-TV9" id="GB2-lX-zFd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

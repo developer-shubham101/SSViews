@@ -10,38 +10,38 @@ import UIKit
 @IBDesignable
 open class SSButton: UIButton {
 	
-	@IBInspectable var shadow:Bool = false {
+	@IBInspectable public var shadow:Bool = false {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var shadowRadius:CGFloat = 0 {
+	@IBInspectable public var shadowRadius:CGFloat = 0 {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var shadowAlpha: Float = 0.3 {
+	@IBInspectable public var shadowAlpha: Float = 0.3 {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var shadowX: Int = 1 {
+	@IBInspectable public var shadowX: Int = 1 {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var shadowY: Int = 1 {
+	@IBInspectable public var shadowY: Int = 1 {
 		didSet{
 			updateView()
 		}
 	}
 	
-	@IBInspectable var radius: Bool = false {
+	@IBInspectable public var radius: Bool = false {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var radiusAmt: CGFloat = 0 {
+	@IBInspectable public var radiusAmt: CGFloat = 0 {
 		didSet{
 			updateView()
 		}

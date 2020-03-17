@@ -27,6 +27,7 @@ open class SSDatePicker: UITextField {
      }
      */
     override public func draw(_ rect: CGRect) {
+		super.draw(rect)
         datePickerViewInit()
     }
     

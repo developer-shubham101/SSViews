@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     //MARK:- Create Refrence of SSDropDown
     @IBOutlet weak var dropDown: SSDropDown!
     
-    
+	@IBOutlet weak var sampleView: SSView!
+	
      //MARK:- Create list for DropDown
     //you can use simple String
     fileprivate var dropDownList:[DropDownModel] = [
@@ -55,6 +56,9 @@ class ViewController: UIViewController {
         datePicker.showDoneButton = true
         datePicker.hideOnChange = false
         datePicker.datePickerDelegate = self
+		
+		
+		sampleView.borderWidth = 3
     }
     
     override func didReceiveMemoryWarning() {

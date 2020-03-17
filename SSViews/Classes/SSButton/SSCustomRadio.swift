@@ -14,37 +14,37 @@ open class SSCustomRadio: SSButton {
 			updateView()
 		}
 	}
-	@IBInspectable var changeImage: Bool = false {
+	@IBInspectable public var changeImage: Bool = false {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var changeBackGroundConr: Bool = false {
+	@IBInspectable public var changeBackGroundConr: Bool = false {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var applyTint: Bool = false {
+	@IBInspectable public var applyTint: Bool = false {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var defaultColor: UIColor = UIColor.clear {
+	@IBInspectable public var defaultColor: UIColor = UIColor.clear {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var highlitedColor: UIColor = UIColor.clear {
+	@IBInspectable public var highlitedColor: UIColor = UIColor.clear {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var defaultImage: UIImage? {
+	@IBInspectable public var defaultImage: UIImage? {
 		didSet{
 			updateView()
 		}
 	}
-	@IBInspectable var highlitedImage: UIImage? {
+	@IBInspectable public var highlitedImage: UIImage? {
 		didSet{
 			updateView()
 		}

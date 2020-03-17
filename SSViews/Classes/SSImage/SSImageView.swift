@@ -11,19 +11,19 @@ import UIKit
 @IBDesignable
 open class SSImageView: UIImageView {
     
-    @IBInspectable var radius:Bool = false {
+    @IBInspectable public var radius:Bool = false {
         didSet{
             updateView()
         }
     }
 	
-    @IBInspectable var radiusAmt:CGFloat = 0 {
+    @IBInspectable public var radiusAmt:CGFloat = 0 {
         didSet{
             updateView()
         }
     }
 	
-	@IBInspectable var clipOuterView:Bool = true {
+	@IBInspectable public var clipOuterView:Bool = true {
 		didSet{
 			updateView()
 		}

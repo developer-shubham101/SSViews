@@ -38,6 +38,7 @@ open class SSDropDown: UITextField, UIPickerViewDelegate, UIPickerViewDataSource
     public var hideOnChange:Bool = false  
     
     override public func awakeFromNib() {
+		super.awakeFromNib()
         pickerViewInit()
     }
     public func reloadData() {
