@@ -28,7 +28,7 @@ for Picker (DropDown) and DatePicker [Check this example](https://github.com/dev
 
 # Screenshots
 
-![Login](https://raw.githubusercontent.com/developer-shubham101/SSViews/master/screenshots/1.png?raw=true "Examples")
+![Login](https://raw.githubusercontent.com/developer-shubham101/SSViews/master/screenshots/SSViews.gif?raw=true "Examples")
 
 ## Requirements
 

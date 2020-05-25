@@ -58,15 +58,22 @@ class ViewController: UIViewController {
         datePicker.datePickerDelegate = self
 		
 		
-		sampleView.borderWidth = 3
+		sampleView.borderWidth = 1
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+	}
 	@IBAction func didTapSwitchRadio(_ sender: SSCustomRadio) {
 		sender.isOn = !sender.isOn
+		if sender.isOn {
+			sampleView.shadowColor = UIColor.lightGray
+			sampleView.gradientAngle = 45
+		}else {
+			sampleView.shadowColor = UIColor.systemYellow
+			sampleView.gradientAngle = 0
+		}
 	}
 	
 }

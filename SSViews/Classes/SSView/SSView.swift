@@ -10,8 +10,14 @@ import UIKit
 
 @IBDesignable
 open class SSView: UIView {
+	//just random comment
 	
 	@IBInspectable public var gradient: Bool = false {
+		didSet{
+			updateView()
+		}
+	}
+	@IBInspectable public var gradientAngle: Float = 0.0 {
 		didSet{
 			updateView()
 		}
@@ -94,23 +100,52 @@ open class SSView: UIView {
 		}
 	}
 	
-	
-	
 	override open class var layerClass: Swift.AnyClass {
 		get {
 			return CAGradientLayer.self
 		}
 	}
+	 
+	public override init(frame: CGRect) {
+		 super.init(frame: frame)
+	}
 	
+	required public init?(coder: NSCoder) {
+		super.init(coder: coder) 
+	}
 	
 	private func updateView(){
 		//Cast layey into CAGradientLayer so we can apply gradient color
 		let layer = self.layer as! CAGradientLayer
 		
+		layer.colors = nil
+		
 		//Apply gradient color on layer if gradient is on
 		if gradient {
 			layer.colors = [gradientFirstColor.cgColor, gradientSecondColor.cgColor]
-		}
+			
+			let alpha: Float = gradientAngle / 360
+			let startPointX = powf(
+				sinf(2 * Float.pi * ((alpha + 0.75) / 2)),
+				2
+			)
+			let startPointY = powf(
+				sinf(2 * Float.pi * ((alpha + 0) / 2)),
+				2
+			)
+			let endPointX = powf(
+				sinf(2 * Float.pi * ((alpha + 0.25) / 2)),
+				2
+			)
+			let endPointY = powf(
+				sinf(2 * Float.pi * ((alpha + 0.5) / 2)),
+				2
+			)
+			
+			layer.endPoint = CGPoint(x: CGFloat(endPointX),y: CGFloat(endPointY))
+			layer.startPoint = CGPoint(x: CGFloat(startPointX), y: CGFloat(startPointY))
+			
+		} 
 		
 		//Apply border if border is on
 		if(border){
