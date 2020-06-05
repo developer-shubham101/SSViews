@@ -28,8 +28,12 @@ class ViewController: UIViewController {
     
 	@IBOutlet weak var sampleView: SSView!
 	
-     //MARK:- Create list for DropDown
-    //you can use simple String
+	@IBOutlet weak var sampleImage: SSImageView!
+	
+	@IBOutlet weak var sampleBtn: SSButton!
+	
+	//MARK:- Create list for DropDown
+	//you can use simple String
     fileprivate var dropDownList:[DropDownModel] = [
         DropDownModel(firstName: "Shubham", lastName: "Sharma", profile: "Full Stack Developer", age: 22),
         DropDownModel(firstName: "Paveen", lastName: "Sharma", profile: "iOS Developer", age: 28),
@@ -45,6 +49,7 @@ class ViewController: UIViewController {
         //Set list to DropDown
         dropDown.data = dropDownList
         dropDown.reloadData()
+		dropDown.selectElement = dropDownList[1]
         
         // Here are some properties DropDown
         dropDown.showDoneButton = true
@@ -74,6 +79,28 @@ class ViewController: UIViewController {
 			sampleView.shadowColor = UIColor.systemYellow
 			sampleView.gradientAngle = 0
 		}
+	}
+
+	@IBAction func didTapToggleViewAttributes(_ sender: SSCustomRadio) {
+		sender.isOn = !sender.isOn
+		
+		
+		sampleView.gradient = sender.isOn
+		
+		sampleView.shadow = sender.isOn
+		
+		sampleView.radius = sender.isOn
+		
+		sampleView.border = sender.isOn
+		
+	}
+	@IBAction func didTapToggleImageAttribute(_ sender: Any) {
+		sampleBtn.radius = false
+		sampleBtn.shadow = false
+		sampleImage.radius = false
+		
+//		sampleBtn.radiusAmt = 3
+//		sampleImage.radiusAmt = 3
 	}
 	
 }

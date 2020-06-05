@@ -34,10 +34,12 @@ open class SSImageView: UIImageView {
 		//Apply mask
 		layer.masksToBounds = clipOuterView
         if(radius){
-            self.layer.cornerRadius = radiusAmt;
+            self.layer.cornerRadius = radiusAmt
             self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
-			
-        }
+		}else {
+			self.layer.cornerRadius = 0
+            self.layer.shadowPath = nil
+		}
     }
     
 }

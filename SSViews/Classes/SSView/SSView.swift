@@ -56,7 +56,7 @@ open class SSView: UIView {
 			updateView()
 		}
 	}
-	@IBInspectable public var shadowColor: UIColor = UIColor.blue {
+	@IBInspectable public var shadowColor: UIColor = UIColor.black {
 		didSet{
 			updateView()
 		}
@@ -151,24 +151,35 @@ open class SSView: UIView {
 		if(border){
 			layer.borderWidth = borderWidth
 			layer.borderColor = borderColor.cgColor
+		} else {
+			layer.borderWidth = 0.0
+			layer.borderColor = nil
 		}
 		
 		//Apply mask
 		layer.masksToBounds = clipOuterView
 		
+		 
 		//Apply shadow if shadow is on
 		if shadow {
 			layer.shadowColor = shadowColor.cgColor
 			layer.shadowOpacity = shadowAlpha
 			layer.shadowOffset = CGSize(width: shadowX, height: shadowY)
 			layer.shadowRadius = shadowRadius
+		}else {
+			layer.shadowColor = nil//UIColor.clear.cgColor
+			layer.shadowOpacity = 0.0
+			layer.shadowOffset = CGSize(width: 0, height: 0)
+			layer.shadowRadius = 0
 		}
 		
 		//Apply radius if radius is on
 		if(radius){
-			layer.cornerRadius = radiusAmt;
+			layer.cornerRadius = radiusAmt
 			layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
-			
+		}else {
+			layer.cornerRadius = 0.0
+			layer.shadowPath = nil
 		}
 		
 	}
