@@ -26,7 +26,11 @@ class ViewController: UIViewController {
     //MARK:- Create Refrence of SSDropDown
     @IBOutlet weak var dropDown: SSDropDown!
     
-	@IBOutlet weak var sampleView: SSView!
+    
+    
+    @IBOutlet weak var sampleButton: SSButton!
+    @IBOutlet weak var sampleImageVIew: SSImageView!
+    @IBOutlet weak var sampleView: SSView!
 	
      //MARK:- Create list for DropDown
     //you can use simple String
@@ -45,6 +49,8 @@ class ViewController: UIViewController {
         //Set list to DropDown
         dropDown.data = dropDownList
         dropDown.reloadData()
+         
+        dropDown.selectElement(element: dropDownList[1])
         
         // Here are some properties DropDown
         dropDown.showDoneButton = true
@@ -65,16 +71,42 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
 	}
-	@IBAction func didTapSwitchRadio(_ sender: SSCustomRadio) {
-		sender.isOn = !sender.isOn
-		if sender.isOn {
-			sampleView.shadowColor = UIColor.lightGray
-			sampleView.gradientAngle = 45
-		}else {
-			sampleView.shadowColor = UIColor.systemYellow
-			sampleView.gradientAngle = 0
-		}
-	}
+    @IBAction func didTapSwitchImageRadius(_ sender: SSCustomRadio) {
+        sender.isOn = !sender.isOn
+        sampleImageVIew.radius = sender.isOn
+    }
+    @IBAction func didTapSwitchButtonShadow(_ sender: SSCustomRadio) {
+        sender.isOn = !sender.isOn
+        if sender.isOn {
+            sampleButton.shadowColor = UIColor.lightGray
+        }else {
+            sampleButton.shadowColor = UIColor.systemYellow
+        }
+    }
+	@IBAction func didTapSwitchRadioColor(_ sender: SSCustomRadio) {
+        sender.isOn = !sender.isOn
+        if sender.isOn {
+            sampleView.shadowColor = UIColor.lightGray
+            sampleView.gradientAngle = 45
+        }else {
+            sampleView.shadowColor = UIColor.systemYellow
+            sampleView.gradientAngle = 0
+        }
+    }
+    @IBAction func didTapSwitchRadio(_ sender: SSCustomRadio) {
+        sender.isOn = !sender.isOn
+        if sender.isOn {
+            sampleView.shadow = false
+            sampleView.radius = false
+            sampleView.border = false
+            sampleView.gradient = false
+        } else {
+            sampleView.shadow = true
+            sampleView.radius = true
+            sampleView.border = true
+            sampleView.gradient = false
+        }
+    }
 	
 }
 //MARK:- Delegate of SSDropDown

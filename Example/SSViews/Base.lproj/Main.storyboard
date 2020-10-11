@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,16 +16,16 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SSDatePicker" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lCB-mZ-5yr" customClass="SSDatePicker" customModule="SSViews">
-                                <rect key="frame" x="26" y="84" width="323" height="34"/>
+                                <rect key="frame" x="30" y="128" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="PK1-jo-QeJ" customClass="SSImageView" customModule="SSViews">
-                                <rect key="frame" x="137.5" y="138" width="100" height="100.00000000000006"/>
+                                <rect key="frame" x="157" y="182" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Oqo-jh-V5t"/>
                                     <constraint firstAttribute="height" constant="100" id="iwy-L2-x3i"/>
@@ -38,7 +38,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWi-5z-Ssz" customClass="SSButton" customModule="SSViews">
-                                <rect key="frame" x="167.5" y="258" width="40" height="40"/>
+                                <rect key="frame" x="187" y="330" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.41960784309999999" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="27l-sI-Bey"/>
@@ -54,7 +54,7 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="useShadow" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="3"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="ShadowX">
                                         <integer key="value" value="3"/>
@@ -62,16 +62,29 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="ShadowY">
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowX">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowY">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SSDropDown" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibv-nV-RfX" customClass="SSDropDown" customModule="SSViews">
-                                <rect key="frame" x="26" y="30" width="323" height="34"/>
+                                <rect key="frame" x="30" y="74" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77c-iX-TV9" customClass="SSView" customModule="SSViews">
-                                <rect key="frame" x="87.5" y="318" width="200" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="107" y="418" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="PI8-Tq-nNi"/>
                                     <constraint firstAttribute="width" constant="200" id="sfi-bS-0Gb"/>
@@ -121,7 +134,27 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="In0-XY-b29" customClass="SSCustomRadio" customModule="SSViews">
-                                <rect key="frame" x="125.5" y="548" width="124" height="18"/>
+                                <rect key="frame" x="124.5" y="648" width="165" height="18"/>
+                                <state key="normal" title=" Toggle Shadow Color"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="changeImage" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="defaultImage" value="ic_unchecked"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="highlitedImage" value="ic_checked"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                        <color key="value" red="0.97647058819999999" green="0.16862745100000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                        <color key="value" red="0.16862745100000001" green="0.41960784309999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyTint" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="changeBackGroundConr" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSwitchRadioColor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cd2-oO-AYJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHt-bK-S9n" customClass="SSCustomRadio" customModule="SSViews">
+                                <rect key="frame" x="145" y="686" width="124" height="18"/>
                                 <state key="normal" title=" Toggle Shadow"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="changeImage" value="YES"/>
@@ -137,24 +170,70 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="changeBackGroundConr" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="didTapSwitchRadio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ccO-du-TkB"/>
+                                    <action selector="didTapSwitchRadio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dfL-v8-Cno"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXL-WY-xr3" customClass="SSCustomRadio" customModule="SSViews">
+                                <rect key="frame" x="149" y="292" width="116" height="18"/>
+                                <state key="normal" title=" Toggle Radius"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="changeImage" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="defaultImage" value="ic_unchecked"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="highlitedImage" value="ic_checked"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                        <color key="value" red="0.97647058819999999" green="0.16862745100000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                        <color key="value" red="0.16862745100000001" green="0.41960784309999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyTint" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="changeBackGroundConr" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSwitchImageRadius:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fl9-kS-Lwj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvK-J2-fuT" customClass="SSCustomRadio" customModule="SSViews">
+                                <rect key="frame" x="145" y="380" width="124" height="18"/>
+                                <state key="normal" title=" Toggle Shadow"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="changeImage" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="defaultImage" value="ic_unchecked"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="highlitedImage" value="ic_checked"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                        <color key="value" red="0.97647058819999999" green="0.16862745100000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                        <color key="value" red="0.16862745100000001" green="0.41960784309999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyTint" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="changeBackGroundConr" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSwitchButtonShadow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SaH-tL-nGq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ibv-nV-RfX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="2MN-4j-jiH"/>
+                            <constraint firstItem="JHt-bK-S9n" firstAttribute="top" secondItem="In0-XY-b29" secondAttribute="bottom" constant="20" id="48D-xW-kIU"/>
                             <constraint firstItem="lCB-mZ-5yr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="6Rn-GD-YhL"/>
                             <constraint firstItem="lCB-mZ-5yr" firstAttribute="top" secondItem="ibv-nV-RfX" secondAttribute="bottom" constant="20" id="BxZ-KF-lUf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lCB-mZ-5yr" secondAttribute="trailing" constant="10" id="F3W-Tw-HB2"/>
-                            <constraint firstItem="rWi-5z-Ssz" firstAttribute="top" secondItem="PK1-jo-QeJ" secondAttribute="bottom" constant="20" id="Lws-S5-9ka"/>
+                            <constraint firstItem="rWi-5z-Ssz" firstAttribute="top" secondItem="LXL-WY-xr3" secondAttribute="bottom" constant="20" id="FMA-EL-8FV"/>
+                            <constraint firstItem="77c-iX-TV9" firstAttribute="top" secondItem="hvK-J2-fuT" secondAttribute="bottom" constant="20" id="IH9-vM-pla"/>
+                            <constraint firstItem="JHt-bK-S9n" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Iwf-Fc-waH"/>
+                            <constraint firstItem="hvK-J2-fuT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KMY-F3-Vf8"/>
+                            <constraint firstItem="LXL-WY-xr3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="LZk-1b-guZ"/>
                             <constraint firstItem="rWi-5z-Ssz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Mts-X5-ZjL"/>
+                            <constraint firstItem="LXL-WY-xr3" firstAttribute="top" secondItem="PK1-jo-QeJ" secondAttribute="bottom" constant="10" id="NTB-k2-lau"/>
+                            <constraint firstItem="hvK-J2-fuT" firstAttribute="top" secondItem="rWi-5z-Ssz" secondAttribute="bottom" constant="10" id="Wt4-3V-tfi"/>
                             <constraint firstItem="In0-XY-b29" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dGC-Cl-zv2"/>
                             <constraint firstItem="77c-iX-TV9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="eL8-YC-WdZ"/>
                             <constraint firstItem="In0-XY-b29" firstAttribute="top" secondItem="77c-iX-TV9" secondAttribute="bottom" constant="30" id="gBd-gd-j4e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ibv-nV-RfX" secondAttribute="trailing" constant="10" id="ixx-SK-bBI"/>
                             <constraint firstItem="PK1-jo-QeJ" firstAttribute="top" secondItem="lCB-mZ-5yr" secondAttribute="bottom" constant="20" id="lZ6-a1-4e2"/>
-                            <constraint firstItem="77c-iX-TV9" firstAttribute="top" secondItem="rWi-5z-Ssz" secondAttribute="bottom" constant="20" id="o6U-Y5-75Z"/>
                             <constraint firstItem="PK1-jo-QeJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ue2-uJ-5L0"/>
                             <constraint firstItem="ibv-nV-RfX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="v7e-fr-SJE"/>
                         </constraints>
@@ -162,6 +241,8 @@
                     <connections>
                         <outlet property="datePicker" destination="lCB-mZ-5yr" id="NvK-fl-rB7"/>
                         <outlet property="dropDown" destination="ibv-nV-RfX" id="g2S-vN-Dyt"/>
+                        <outlet property="sampleButton" destination="rWi-5z-Ssz" id="PhQ-Ew-ikr"/>
+                        <outlet property="sampleImageVIew" destination="PK1-jo-QeJ" id="kkB-wm-9dP"/>
                         <outlet property="sampleView" destination="77c-iX-TV9" id="GB2-lX-zFd"/>
                     </connections>
                 </viewController>

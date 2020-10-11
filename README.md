@@ -43,7 +43,7 @@ pod 'SSViews'
 
 ## Author
 
-shubhamsharma95, shubham.sharma@arkasoftwares.com
+developer-shubham101, developer.shubham101@gmail.com
 
 ## License
 

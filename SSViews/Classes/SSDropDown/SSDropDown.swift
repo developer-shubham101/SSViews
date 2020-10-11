@@ -2,7 +2,7 @@
 //  SSDropDown.swift
 //  SSViews
 //
-//  Created by Arka Softwares on 05/07/19.
+//  Created by Shubham Sharma on 05/07/19.
 //
 
 
@@ -26,16 +26,16 @@ open class SSDropDown: UITextField, UIPickerViewDelegate, UIPickerViewDataSource
     
     fileprivate let picker = UIPickerView( )
     
-    public var selectedItem:DropDownObject?
-    public var data:[DropDownObject] = []
-    public var dropDownDelegate:SSDropDownDelegate?
+    public var selectedItem: DropDownObject?
+    public var data: [DropDownObject] = []
+    public var dropDownDelegate: SSDropDownDelegate?
     
     public var showDoneButton:Bool = false {
         didSet{
             pickerViewInit()
         }
     }
-    public var hideOnChange:Bool = false  
+    public var hideOnChange: Bool = false
     
     override public func awakeFromNib() {
 		super.awakeFromNib()
@@ -45,8 +45,26 @@ open class SSDropDown: UITextField, UIPickerViewDelegate, UIPickerViewDataSource
         picker.reloadAllComponents()
         self.text = ""
     }
-    //picker
+    public func selectElement(element: DropDownObject, response: Bool = false){
+        _selectItem(element, response: response)
+        
+        for (index, item) in data.enumerated(){
+            if(item.getString() == element.getString()){
+//                picker.selectedRow(inComponent: index)
+                picker.selectRow(index, inComponent: 0, animated: true)
+                break
+            }
+        }
+    }
     
+    fileprivate func _selectItem(_ element: DropDownObject, response: Bool){
+        self.text = element.getString()
+        selectedItem = element
+        if (response) {
+             dropDownDelegate?.optionChange(self, selectedItem: element)
+        }
+    }
+    //picker
     fileprivate func pickerViewInit( ){
         
         //Create a parent view for UIPickerView
@@ -132,12 +150,10 @@ open class SSDropDown: UITextField, UIPickerViewDelegate, UIPickerViewDataSource
         //        selectedGender = genderList [row]
         //        childGender.text = selectedGender
         if data.count > 0 {
-            self.text = data[row].getString()
-            selectedItem = data[row]
-            dropDownDelegate?.optionChange(self, selectedItem: data[row])
-            if hideOnChange {
-                resignFirstResponder()
-            }
+            _selectItem(data[row], response: true)
+           if hideOnChange {
+               resignFirstResponder()
+           }
         }
     }
     //*****************************************************

@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## SSViews
 
-Copyright (c) 2019 shubhamsharma95 <shubham.sharma@arkasoftwares.com>
+Copyright (c) 2019 developer-shubham101 <developer.shubham101@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

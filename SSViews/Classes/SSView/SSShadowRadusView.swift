@@ -2,7 +2,7 @@
 //  SSShadowRadusView.swift
 //  Pods-SSViews_Example
 //
-//  Created by Arka Softwares on 02/12/19.
+//  Created by Shubham Sharma on 02/12/19.
 //
 
 import UIKit

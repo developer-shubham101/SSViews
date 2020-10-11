@@ -2,8 +2,8 @@
 //  SSCustomRadio.swift
 //  UpgradeMySelf-ios
 //
-//  Created by Arka Softwares on 26/06/19.
-//  Copyright © 2019 Arka Softwares. All rights reserved.
+//  Created by Shubham Sharma on 26/06/19.
+//  Copyright © 2019 Shubham Sharma. All rights reserved.
 //
 
 import UIKit
@@ -49,6 +49,8 @@ open class SSCustomRadio: SSButton {
 			updateView()
 		}
 	}
+    
+    public var userData: String = ""
 	
 	
 	func updateView(){

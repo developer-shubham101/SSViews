@@ -144,14 +144,19 @@ open class SSView: UIView {
 			
 			layer.endPoint = CGPoint(x: CGFloat(endPointX),y: CGFloat(endPointY))
 			layer.startPoint = CGPoint(x: CGFloat(startPointX), y: CGFloat(startPointY))
-			
-		} 
+            
+        } else {
+            layer.colors = nil
+        }
 		
 		//Apply border if border is on
 		if(border){
 			layer.borderWidth = borderWidth
 			layer.borderColor = borderColor.cgColor
-		}
+        }else{
+            layer.borderWidth = 0
+            layer.borderColor = nil
+        }
 		
 		//Apply mask
 		layer.masksToBounds = clipOuterView
@@ -162,14 +167,21 @@ open class SSView: UIView {
 			layer.shadowOpacity = shadowAlpha
 			layer.shadowOffset = CGSize(width: shadowX, height: shadowY)
 			layer.shadowRadius = shadowRadius
-		}
+        } else {
+            layer.shadowColor = nil
+            layer.shadowOpacity = 0.0
+            layer.shadowOffset = CGSize(width: 0, height: 0)
+            layer.shadowRadius = 0
+        }
 		
 		//Apply radius if radius is on
 		if(radius){
 			layer.cornerRadius = radiusAmt;
 			layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
-			
-		}
+        }else{
+            layer.cornerRadius = 0;
+            layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
+        }
 		
 	}
 }
