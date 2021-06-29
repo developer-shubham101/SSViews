@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,8 +38,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWi-5z-Ssz" customClass="SSButton" customModule="SSViews">
-                                <rect key="frame" x="187" y="330" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWi-5z-Ssz" customClass="SSButton" customModule="SSViews">
+                                <rect key="frame" x="187" y="342" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.41960784309999999" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="27l-sI-Bey"/>
@@ -83,8 +84,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77c-iX-TV9" customClass="SSView" customModule="SSViews">
-                                <rect key="frame" x="107" y="418" width="200" height="200"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="107" y="442" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="PI8-Tq-nNi"/>
                                     <constraint firstAttribute="width" constant="200" id="sfi-bS-0Gb"/>
@@ -95,10 +96,10 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemYellowColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemYellowColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
@@ -123,7 +124,7 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="gradient" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientFirstColor">
-                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemYellowColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientSecondColor">
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -133,8 +134,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="In0-XY-b29" customClass="SSCustomRadio" customModule="SSViews">
-                                <rect key="frame" x="124.5" y="648" width="165" height="18"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="In0-XY-b29" customClass="SSCustomRadio" customModule="SSViews">
+                                <rect key="frame" x="132" y="672" width="150" height="30"/>
                                 <state key="normal" title=" Toggle Shadow Color"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="changeImage" value="YES"/>
@@ -153,8 +154,8 @@
                                     <action selector="didTapSwitchRadioColor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cd2-oO-AYJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHt-bK-S9n" customClass="SSCustomRadio" customModule="SSViews">
-                                <rect key="frame" x="145" y="686" width="124" height="18"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHt-bK-S9n" customClass="SSCustomRadio" customModule="SSViews">
+                                <rect key="frame" x="152.5" y="722" width="109" height="30"/>
                                 <state key="normal" title=" Toggle Shadow"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="changeImage" value="YES"/>
@@ -173,8 +174,8 @@
                                     <action selector="didTapSwitchRadio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dfL-v8-Cno"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXL-WY-xr3" customClass="SSCustomRadio" customModule="SSViews">
-                                <rect key="frame" x="149" y="292" width="116" height="18"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXL-WY-xr3" customClass="SSCustomRadio" customModule="SSViews">
+                                <rect key="frame" x="156.5" y="292" width="101" height="30"/>
                                 <state key="normal" title=" Toggle Radius"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="changeImage" value="YES"/>
@@ -193,8 +194,8 @@
                                     <action selector="didTapSwitchImageRadius:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fl9-kS-Lwj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvK-J2-fuT" customClass="SSCustomRadio" customModule="SSViews">
-                                <rect key="frame" x="145" y="380" width="124" height="18"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvK-J2-fuT" customClass="SSCustomRadio" customModule="SSViews">
+                                <rect key="frame" x="152.5" y="392" width="109" height="30"/>
                                 <state key="normal" title=" Toggle Shadow"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="changeImage" value="YES"/>
@@ -251,9 +252,35 @@
             <point key="canvasLocation" x="-15.199999999999999" y="127.28635682158921"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="In0-XY-b29">
+            <size key="intrinsicContentSize" width="150" height="30"/>
+        </designable>
+        <designable name="JHt-bK-S9n">
+            <size key="intrinsicContentSize" width="109" height="30"/>
+        </designable>
+        <designable name="LXL-WY-xr3">
+            <size key="intrinsicContentSize" width="101" height="30"/>
+        </designable>
+        <designable name="PK1-jo-QeJ">
+            <size key="intrinsicContentSize" width="257" height="196"/>
+        </designable>
+        <designable name="hvK-J2-fuT">
+            <size key="intrinsicContentSize" width="109" height="30"/>
+        </designable>
+        <designable name="rWi-5z-Ssz">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="download" width="257" height="196"/>
         <image name="ic_checked" width="15" height="15"/>
         <image name="ic_unchecked" width="15" height="15"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

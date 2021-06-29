@@ -1,5 +1,5 @@
 PODS:
-  - SSViews (0.1.5)
+  - SSViews (0.1.7)
 
 DEPENDENCIES:
   - SSViews (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SSViews: ab31cc8469733263c34103941aaf9a74bcdf1838
+  SSViews: fabbeae84c1fef7e94b95e554097ff3569d8af74
 
 PODFILE CHECKSUM: 4c015e49fc22d6a6542fab287f4437650798472e
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

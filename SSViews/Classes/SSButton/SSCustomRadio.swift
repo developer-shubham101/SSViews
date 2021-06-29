@@ -19,7 +19,7 @@ open class SSCustomRadio: SSButton {
 			updateView()
 		}
 	}
-	@IBInspectable public var changeBackGroundConr: Bool = false {
+	@IBInspectable public var changeBackGroundColor: Bool = true {
 		didSet{
 			updateView()
 		}
@@ -76,7 +76,7 @@ open class SSCustomRadio: SSButton {
 				}
 			}
 		}
-		if changeBackGroundConr {
+		if changeBackGroundColor {
 			if(isOn){
 				backgroundColor = highlitedColor
 			}else{
