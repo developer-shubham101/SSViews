@@ -53,6 +53,10 @@ open class SSDatePicker: UITextField {
         //create UIPickerView object
         let datepicker = UIDatePicker( )
         
+        if #available(iOS 13.4, *) {
+            datepicker.preferredDatePickerStyle = .wheels
+        }
+        
         datepicker.backgroundColor = .clear
         //add UIPickerView into parent view
         pickerViewWrpper.addSubview(datepicker)
